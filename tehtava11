@@ -1,0 +1,16 @@
+public class Pisin {
+    public static void main(String[] args) {
+        if (args.length == 0){
+            System.out.println("Ei parametreja");
+        } else {
+            String pisin = "";
+            for (String sana : args) {
+                int pituus = sana.length();
+                if (pituus > pisin.length()) {
+                    pisin = sana;
+                }
+            }
+            System.out.println("Pisin parametri: " + pisin);
+        }
+    }
+}
